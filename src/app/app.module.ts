@@ -4,20 +4,20 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
 import { AlertPage } from '../pages/alert/alert';
+import { BadgesPage } from '../pages/badges/badges';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-	ListPage,
 	ActionSheetPage,
-	AlertPage
+	AlertPage,
+	BadgesPage
   ],
   imports: [
     BrowserModule,
@@ -27,9 +27,9 @@ import { AlertPage } from '../pages/alert/alert';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
 	ActionSheetPage,
-	AlertPage
+	AlertPage,
+	BadgesPage
   ],
   providers: [
     StatusBar,
