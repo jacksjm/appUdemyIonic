@@ -10,6 +10,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
 import { AlertPage } from '../pages/alert/alert';
 import { BadgesPage } from '../pages/badges/badges';
+import { BotoesPage } from '../pages/botoes/botoes';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BadgesPage } from '../pages/badges/badges';
     HomePage,
 	ActionSheetPage,
 	AlertPage,
-	BadgesPage
+	BadgesPage,
+	BotoesPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { BadgesPage } from '../pages/badges/badges';
     HomePage,
 	ActionSheetPage,
 	AlertPage,
-	BadgesPage
+	BadgesPage,
+	BotoesPage
   ],
   providers: [
     StatusBar,
