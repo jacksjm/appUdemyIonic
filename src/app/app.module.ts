@@ -9,13 +9,15 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
+import { AlertPage } from '../pages/alert/alert';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
 	ListPage,
-	ActionSheetPage
+	ActionSheetPage,
+	AlertPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
     MyApp,
     HomePage,
     ListPage,
-	ActionSheetPage
+	ActionSheetPage,
+	AlertPage
   ],
   providers: [
     StatusBar,
