@@ -12,7 +12,6 @@ export class AlertPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AlertPage');
   }
   public abrirAlert(): void {
 	let alertBasic = this.alertCtrl.create(
