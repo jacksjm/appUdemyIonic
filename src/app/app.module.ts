@@ -15,6 +15,7 @@ import { CardPage } from '../pages/card/card';
 import { CheckboxPage } from '../pages/checkbox/checkbox';
 import { RadioPage } from '../pages/radio/radio';
 import { RangePage } from '../pages/range/range';
+import { DateTimePage } from '../pages/date-time/date-time';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { RangePage } from '../pages/range/range';
 	CardPage,
 	CheckboxPage,
 	RadioPage,
-	RangePage
+	RangePage,
+	DateTimePage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,8 @@ import { RangePage } from '../pages/range/range';
 	CardPage,
 	CheckboxPage,
 	RadioPage,
-	RangePage
+	RangePage,
+	DateTimePage
   ],
   providers: [
     StatusBar,

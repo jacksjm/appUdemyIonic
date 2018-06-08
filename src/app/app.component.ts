@@ -12,6 +12,7 @@ import { CardPage } from '../pages/card/card';
 import { CheckboxPage } from '../pages/checkbox/checkbox';
 import { RadioPage } from '../pages/radio/radio';
 import { RangePage } from '../pages/range/range';
+import { DateTimePage } from '../pages/date-time/date-time';
 
 @Component({
   templateUrl: 'app.html'
@@ -19,7 +20,7 @@ import { RangePage } from '../pages/range/range';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = RangePage;
+  rootPage: any = DateTimePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -36,7 +37,8 @@ export class MyApp {
 	  { title: 'Card', component: CardPage },
 	  { title: 'Checkbox', component: CheckboxPage },
 	  { title: 'Radio', component: RadioPage },
-	  { title: 'Range', component: RangePage }
+	  { title: 'Range', component: RangePage },
+	  { title: 'DateTime', component: DateTimePage }
     ];
 
   }
