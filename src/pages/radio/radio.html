@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+	<button ion-button menuToggle>
+	<ion-icon name="menu"></ion-icon>
+	</button>
+    <ion-title>Radio</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list radio-group>
+		<ion-list-header>Frutas</ion-list-header>
+		<ion-item>
+			<ion-label>Maçã</ion-label>
+			<ion-radio checked="true" value="M"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Laranja</ion-label>
+			<ion-radio disabled="true" value="L"></ion-radio>
+		</ion-item>
+		<ion-item>
+			<ion-label>Banana</ion-label>
+			<ion-radio color="danger" value="B"></ion-radio>
+		</ion-item>
+	</ion-list>
+</ion-content>

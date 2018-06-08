@@ -13,6 +13,7 @@ import { BadgesPage } from '../pages/badges/badges';
 import { BotoesPage } from '../pages/botoes/botoes';
 import { CardPage } from '../pages/card/card';
 import { CheckboxPage } from '../pages/checkbox/checkbox';
+import { RadioPage } from '../pages/radio/radio';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CheckboxPage } from '../pages/checkbox/checkbox';
 	BadgesPage,
 	BotoesPage,
 	CardPage,
-	CheckboxPage
+	CheckboxPage,
+	RadioPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { CheckboxPage } from '../pages/checkbox/checkbox';
 	BadgesPage,
 	BotoesPage,
 	CardPage,
-	CheckboxPage
+	CheckboxPage,
+	RadioPage
   ],
   providers: [
     StatusBar,
