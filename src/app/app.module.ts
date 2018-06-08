@@ -14,6 +14,7 @@ import { BotoesPage } from '../pages/botoes/botoes';
 import { CardPage } from '../pages/card/card';
 import { CheckboxPage } from '../pages/checkbox/checkbox';
 import { RadioPage } from '../pages/radio/radio';
+import { RangePage } from '../pages/range/range';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RadioPage } from '../pages/radio/radio';
 	BotoesPage,
 	CardPage,
 	CheckboxPage,
-	RadioPage
+	RadioPage,
+	RangePage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { RadioPage } from '../pages/radio/radio';
 	BotoesPage,
 	CardPage,
 	CheckboxPage,
-	RadioPage
+	RadioPage,
+	RangePage
   ],
   providers: [
     StatusBar,

@@ -12,7 +12,6 @@ export class CheckboxPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CheckboxPage');
   }
 
 }
