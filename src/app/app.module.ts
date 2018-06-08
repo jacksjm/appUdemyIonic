@@ -12,6 +12,15 @@ import { AlertPage } from '../pages/alert/alert';
 import { BadgesPage } from '../pages/badges/badges';
 import { BotoesPage } from '../pages/botoes/botoes';
 import { CardPage } from '../pages/card/card';
+import { CheckboxPage } from '../pages/checkbox/checkbox';
+import { RadioPage } from '../pages/radio/radio';
+import { RangePage } from '../pages/range/range';
+import { DateTimePage } from '../pages/date-time/date-time';
+import { FabPage } from '../pages/fab/fab';
+import { GridPage } from '../pages/grid/grid';
+import { IconesPage } from '../pages/icones/icones';
+import { InputPage } from '../pages/input/input';
+import { ListPage } from '../pages/list/list';
 
 @NgModule({
   declarations: [
@@ -21,7 +30,16 @@ import { CardPage } from '../pages/card/card';
 	AlertPage,
 	BadgesPage,
 	BotoesPage,
-	CardPage
+	CardPage,
+	CheckboxPage,
+	RadioPage,
+	RangePage,
+	DateTimePage,
+	FabPage,
+	GridPage,
+	IconesPage,
+	InputPage,
+	ListPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +53,16 @@ import { CardPage } from '../pages/card/card';
 	AlertPage,
 	BadgesPage,
 	BotoesPage,
-	CardPage
+	CardPage,
+	CheckboxPage,
+	RadioPage,
+	RangePage,
+	DateTimePage,
+	FabPage,
+	GridPage,
+	IconesPage,
+	InputPage,
+	ListPage
   ],
   providers: [
     StatusBar,
