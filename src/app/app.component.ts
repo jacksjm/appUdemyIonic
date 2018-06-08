@@ -13,6 +13,7 @@ import { CheckboxPage } from '../pages/checkbox/checkbox';
 import { RadioPage } from '../pages/radio/radio';
 import { RangePage } from '../pages/range/range';
 import { DateTimePage } from '../pages/date-time/date-time';
+import { FabPage } from '../pages/fab/fab';
 
 @Component({
   templateUrl: 'app.html'
@@ -20,7 +21,7 @@ import { DateTimePage } from '../pages/date-time/date-time';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = DateTimePage;
+  rootPage: any = FabPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -38,7 +39,8 @@ export class MyApp {
 	  { title: 'Checkbox', component: CheckboxPage },
 	  { title: 'Radio', component: RadioPage },
 	  { title: 'Range', component: RangePage },
-	  { title: 'DateTime', component: DateTimePage }
+	  { title: 'DateTime', component: DateTimePage },
+	  { title: 'Fab', component: FabPage }
     ];
 
   }
