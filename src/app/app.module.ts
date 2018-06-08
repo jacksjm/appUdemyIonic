@@ -20,6 +20,7 @@ import { FabPage } from '../pages/fab/fab';
 import { GridPage } from '../pages/grid/grid';
 import { IconesPage } from '../pages/icones/icones';
 import { InputPage } from '../pages/input/input';
+import { ListPage } from '../pages/list/list';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { InputPage } from '../pages/input/input';
 	FabPage,
 	GridPage,
 	IconesPage,
-	InputPage
+	InputPage,
+	ListPage
   ],
   imports: [
     BrowserModule,
@@ -59,7 +61,8 @@ import { InputPage } from '../pages/input/input';
 	FabPage,
 	GridPage,
 	IconesPage,
-	InputPage
+	InputPage,
+	ListPage
   ],
   providers: [
     StatusBar,

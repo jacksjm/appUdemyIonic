@@ -1,0 +1,90 @@
+<ion-header>
+
+  <ion-navbar>
+	<button ion-button menuToggle>
+	<ion-icon name="menu"></ion-icon>
+	</button>
+    <ion-title>List</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list>
+		<ion-item>
+			Item simples
+		</ion-item>
+	</ion-list>
+	<!-- Lista com Textos-->
+	<ion-item-group>
+		<ion-item-divider color="light">A</ion-item-divider>
+		<ion-item>Angola</ion-item>
+		<ion-item>Argentina</ion-item>
+	</ion-item-group>
+	<!-- Lista com Textos no JS-->
+	<ion-list no-lines>
+		<ion-item-divider color="dark">Frutas com Texto</ion-item-divider>
+		<ion-item *ngFor="let item of itens" (click)="selecionarItem(item)">{{item}}</ion-item>
+	</ion-list>
+	<!-- Lista com Botões-->
+	<ion-list>
+		<ion-item-divider color="dark">Frutas com Botão</ion-item-divider>
+		<button ion-item *ngFor="let item of itens" (click)="selecionarItem(item)">{{item}}</button>
+	</ion-list>
+	<!-- Lista com Título-->
+	<br>
+	<ion-list>
+		<ion-list-header>Titulo</ion-list-header>
+		<ion-item *ngFor="let item of itens" (click)="selecionarItem(item)">{{item}}</ion-item>
+	</ion-list>
+	<!-- Lista com ícones e badge-->
+	<ion-list>
+		<ion-item *ngFor="let item of itens" (click)="selecionarItem(item)"><ion-icon name="leaf" item-start></ion-icon>{{item}}<ion-badge item-end>111</ion-badge></ion-item>
+	</ion-list>
+	<!-- Lista com avatar-->
+	<ion-list>
+		<ion-item *ngFor="let item of itens" (click)="selecionarItem(item)">
+			<ion-avatar item-start><img src="https://st2.depositphotos.com/3557671/12182/v/450/depositphotos_121829604-stock-illustration-apple-icon-cartoon-singe-fruit.jpg"/></ion-avatar>
+			<p>{{item}}</p>
+			<p>Esta fruta é saudável</p>
+		</ion-item>
+	</ion-list>
+	<!-- Lista com Sliding -->
+	<ion-list no-lines>
+		<ion-item-sliding>
+			<ion-item>
+				<ion-avatar item-start><img src="https://st2.depositphotos.com/3557671/12182/v/450/depositphotos_121829604-stock-illustration-apple-icon-cartoon-singe-fruit.jpg"/></ion-avatar>
+				<h2>Slimer</h2>
+			</ion-item>
+			<ion-item-options side="left">
+				<button ion-button color="primary">
+					<ion-icon name="text"></ion-icon>
+					Text
+				</button>
+				<button ion-button color="secondary">
+					<ion-icon name="call"></ion-icon>
+					Text
+				</button>
+			</ion-item-options>
+			<ion-item-options side="right">
+				<button ion-button color="primary">
+					<ion-icon name="mail"></ion-icon>
+					Email
+				</button>
+			</ion-item-options>
+		</ion-item-sliding>
+	</ion-list>
+
+	<!-- Lista com Thumbnail -->
+	<ion-list>
+		<ion-item>
+			<ion-thumbnail item-start>
+				<img src="https://st2.depositphotos.com/3557671/12182/v/450/depositphotos_121829604-stock-illustration-apple-icon-cartoon-singe-fruit.jpg"/>
+			</ion-thumbnail>
+			<h2>Fruta</h2>
+			<p>Saúde</p>
+			<button ion-buttom clear item-end>Curtir</button>
+		</ion-item>
+	</ion-list>
+</ion-content>
