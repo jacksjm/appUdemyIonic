@@ -16,7 +16,6 @@ export class ActionSheetPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ActionSheetPage');
   }
   public abrirActionSheet(): void {
 	let alertCreate = this.alertCtrl.create(
