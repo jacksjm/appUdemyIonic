@@ -16,6 +16,7 @@ import { DateTimePage } from '../pages/date-time/date-time';
 import { FabPage } from '../pages/fab/fab';
 import { GridPage } from '../pages/grid/grid';
 import { IconesPage } from '../pages/icones/icones';
+import { InputPage } from '../pages/input/input';
 
 @Component({
   templateUrl: 'app.html'
@@ -23,7 +24,7 @@ import { IconesPage } from '../pages/icones/icones';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = IconesPage;
+  rootPage: any = InputPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -44,7 +45,8 @@ export class MyApp {
 	  { title: 'DateTime', component: DateTimePage },
 	  { title: 'Fab', component: FabPage },
 	  { title: 'Grid', component: GridPage },
-	  { title: 'Icones', component: IconesPage }
+	  { title: 'Icones', component: IconesPage },
+	  { title: 'Input', component: InputPage }
     ];
 
   }
