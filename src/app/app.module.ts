@@ -17,6 +17,7 @@ import { RadioPage } from '../pages/radio/radio';
 import { RangePage } from '../pages/range/range';
 import { DateTimePage } from '../pages/date-time/date-time';
 import { FabPage } from '../pages/fab/fab';
+import { GridPage } from '../pages/grid/grid';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FabPage } from '../pages/fab/fab';
 	RadioPage,
 	RangePage,
 	DateTimePage,
-	FabPage
+	FabPage,
+	GridPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { FabPage } from '../pages/fab/fab';
 	RadioPage,
 	RangePage,
 	DateTimePage,
-	FabPage
+	FabPage,
+	GridPage
   ],
   providers: [
     StatusBar,
