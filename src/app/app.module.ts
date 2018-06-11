@@ -22,6 +22,7 @@ import { IconesPage } from '../pages/icones/icones';
 import { InputPage } from '../pages/input/input';
 import { ListPage } from '../pages/list/list';
 import { TogglePage } from '../pages/toggle/toggle';
+import { LoadingPage } from '../pages/loading/loading';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { TogglePage } from '../pages/toggle/toggle';
 	IconesPage,
 	InputPage,
 	ListPage,
-	TogglePage
+	TogglePage,
+	LoadingPage
   ],
   imports: [
     BrowserModule,
@@ -65,7 +67,8 @@ import { TogglePage } from '../pages/toggle/toggle';
 	IconesPage,
 	InputPage,
 	ListPage,
-	TogglePage
+	TogglePage,
+	LoadingPage
   ],
   providers: [
     StatusBar,
