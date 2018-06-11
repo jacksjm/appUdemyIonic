@@ -21,6 +21,7 @@ import { GridPage } from '../pages/grid/grid';
 import { IconesPage } from '../pages/icones/icones';
 import { InputPage } from '../pages/input/input';
 import { ListPage } from '../pages/list/list';
+import { TogglePage } from '../pages/toggle/toggle';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ListPage } from '../pages/list/list';
 	GridPage,
 	IconesPage,
 	InputPage,
-	ListPage
+	ListPage,
+	TogglePage
   ],
   imports: [
     BrowserModule,
@@ -62,7 +64,8 @@ import { ListPage } from '../pages/list/list';
 	GridPage,
 	IconesPage,
 	InputPage,
-	ListPage
+	ListPage,
+	TogglePage
   ],
   providers: [
     StatusBar,

@@ -18,6 +18,7 @@ import { GridPage } from '../pages/grid/grid';
 import { IconesPage } from '../pages/icones/icones';
 import { InputPage } from '../pages/input/input';
 import { ListPage } from '../pages/list/list';
+import { TogglePage } from '../pages/toggle/toggle';
 
 @Component({
   templateUrl: 'app.html'
@@ -25,7 +26,7 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = ListPage;
+  rootPage: any = TogglePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -48,7 +49,8 @@ export class MyApp {
 	  { title: 'Grid', component: GridPage },
 	  { title: 'Icones', component: IconesPage },
 	  { title: 'Input', component: InputPage },
-	  { title: 'List', component: ListPage }
+	  { title: 'List', component: ListPage },
+	  { title: 'Toggle', component: TogglePage }
     ];
 
   }
