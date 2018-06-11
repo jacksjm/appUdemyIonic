@@ -24,6 +24,7 @@ import { ListPage } from '../pages/list/list';
 import { TogglePage } from '../pages/toggle/toggle';
 import { LoadingPage } from '../pages/loading/loading';
 import { ToastPage } from '../pages/toast/toast';
+import { ToolbarPage } from '../pages/toolbar/toolbar';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { ToastPage } from '../pages/toast/toast';
 	ListPage,
 	TogglePage,
 	LoadingPage,
-	ToastPage
+	ToastPage,
+	ToolbarPage
   ],
   imports: [
     BrowserModule,
@@ -71,7 +73,8 @@ import { ToastPage } from '../pages/toast/toast';
 	ListPage,
 	TogglePage,
 	LoadingPage,
-	ToastPage
+	ToastPage,
+	ToolbarPage
   ],
   providers: [
     StatusBar,

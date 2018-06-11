@@ -21,6 +21,7 @@ import { ListPage } from '../pages/list/list';
 import { TogglePage } from '../pages/toggle/toggle';
 import { LoadingPage } from '../pages/loading/loading';
 import { ToastPage } from '../pages/toast/toast';
+import { ToolbarPage } from '../pages/toolbar/toolbar';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +29,7 @@ import { ToastPage } from '../pages/toast/toast';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = ToastPage;
+  rootPage: any = ToolbarPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -54,7 +55,8 @@ export class MyApp {
 	  { title: 'List', component: ListPage },
 	  { title: 'Toggle', component: TogglePage },
 	  { title: 'Loading', component: LoadingPage },
-	  { title: 'Toast', component: ToastPage }
+	  { title: 'Toast', component: ToastPage },
+	  { title: 'Toolbar', component: ToolbarPage }
     ];
 
   }
