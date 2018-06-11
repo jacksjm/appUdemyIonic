@@ -23,6 +23,7 @@ import { InputPage } from '../pages/input/input';
 import { ListPage } from '../pages/list/list';
 import { TogglePage } from '../pages/toggle/toggle';
 import { LoadingPage } from '../pages/loading/loading';
+import { ToastPage } from '../pages/toast/toast';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { LoadingPage } from '../pages/loading/loading';
 	InputPage,
 	ListPage,
 	TogglePage,
-	LoadingPage
+	LoadingPage,
+	ToastPage
   ],
   imports: [
     BrowserModule,
@@ -68,7 +70,8 @@ import { LoadingPage } from '../pages/loading/loading';
 	InputPage,
 	ListPage,
 	TogglePage,
-	LoadingPage
+	LoadingPage,
+	ToastPage
   ],
   providers: [
     StatusBar,
