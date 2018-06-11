@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar>
+	<button ion-button menuToggle>
+	<ion-icon name="menu"></ion-icon>
+	</button>
+    <ion-title>Toast</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<button ion-button block (click)="showToast('top')">Toast Top</button>
+	<button ion-button block (click)="showToast('middle')">Toast Middle</button>
+	<button ion-button block (click)="showToast('bottom')">Toast Bottom</button>
+	<button ion-button block (click)="showLongToast()">Toast Long</button>
+	<button ion-button block (click)="showButtonToast()">Toast Button</button>
+
+</ion-content>

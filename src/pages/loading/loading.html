@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar>
+	<button ion-button menuToggle>
+	<ion-icon name="menu"></ion-icon>
+	</button>
+    <ion-title>Loading</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<button ion-button (click)="salvar()">Salvar</button>
+	<button ion-button (click)="salvarSemSpinner()">Salvar Sem Spinner</button>
+	<button ion-button (click)="salvarCustomizado()">Salvar Customizado</button>
+	<button ion-button (click)="salvarIndicadores()">Salvar Indicadores</button>
+	<br>
+	<ion-spinner></ion-spinner>
+	<ion-spinner name="dots"></ion-spinner>
+	<ion-spinner name="ios"></ion-spinner>
+	<ion-spinner name="bubbles"></ion-spinner>
+	<ion-spinner name="circles"></ion-spinner>
+	<ion-spinner name="crescent"></ion-spinner>
+</ion-content>
