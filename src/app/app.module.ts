@@ -26,6 +26,7 @@ import { LoadingPage } from '../pages/loading/loading';
 import { ToastPage } from '../pages/toast/toast';
 import { ToolbarPage } from '../pages/toolbar/toolbar';
 import { SegmentPage } from '../pages/segment/segment';
+import { TabsPage } from '../pages/tabs/tabs';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { SegmentPage } from '../pages/segment/segment';
 		LoadingPage,
 		ToastPage,
 		ToolbarPage,
-		SegmentPage
+		SegmentPage,
+		TabsPage
   ],
   imports: [
     BrowserModule,
@@ -77,7 +79,8 @@ import { SegmentPage } from '../pages/segment/segment';
 		LoadingPage,
 		ToastPage,
 		ToolbarPage,
-		SegmentPage
+		SegmentPage,
+		TabsPage
   ],
   providers: [
     StatusBar,
