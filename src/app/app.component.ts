@@ -25,6 +25,7 @@ import { ToolbarPage } from '../pages/toolbar/toolbar';
 import { SegmentPage } from '../pages/segment/segment';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SelectPage } from '../pages/select/select';
+import { PaginaPrincipalPage } from '../pages/pagina-principal/pagina-principal';
 
 @Component({
 	templateUrl: 'app.html'
@@ -32,7 +33,7 @@ import { SelectPage } from '../pages/select/select';
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 
-	rootPage: any = SelectPage;
+	rootPage: any = PaginaPrincipalPage;
 
 	pages: Array<{title: string, component: any}>;
 
@@ -62,7 +63,8 @@ export class MyApp {
 			{ title: 'Toolbar', component: ToolbarPage },
 			{ title: 'Segment', component: SegmentPage },
 			{ title: 'Tabs', component: TabsPage },
-			{ title: 'Select', component: SelectPage }
+			{ title: 'Select', component: SelectPage },
+			{ title: 'Pagina Principal', component: PaginaPrincipalPage }
 		];
 
 	}
