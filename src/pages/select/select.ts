@@ -7,11 +7,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'select.html',
 })
 export class SelectPage {
-
+  public selectOptions: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
+    this.selectOptions = {
+      title: 'Frutas frescas',
+      subTitle: 'Selecione a fruta mais doce',
+      mode: 'ios'
+    }
   }
 
 }
