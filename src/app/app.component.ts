@@ -22,57 +22,63 @@ import { TogglePage } from '../pages/toggle/toggle';
 import { LoadingPage } from '../pages/loading/loading';
 import { ToastPage } from '../pages/toast/toast';
 import { ToolbarPage } from '../pages/toolbar/toolbar';
+import { SegmentPage } from '../pages/segment/segment';
+import { TabsPage } from '../pages/tabs/tabs';
+import { SelectPage } from '../pages/select/select';
 
 @Component({
-  templateUrl: 'app.html'
+	templateUrl: 'app.html'
 })
 export class MyApp {
-  @ViewChild(Nav) nav: Nav;
+	@ViewChild(Nav) nav: Nav;
 
-  rootPage: any = ToolbarPage;
+	rootPage: any = SelectPage;
 
-  pages: Array<{title: string, component: any}>;
+	pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
-    this.initializeApp();
+	constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+		this.initializeApp();
 
-    // used for an example of ngFor and navigation
-    this.pages = [
-      { title: 'Home', component: HomePage },
-	  { title: 'ActionSheet', component: ActionSheetPage },
-	  { title: 'Alert', component: AlertPage },
-	  { title: 'Badges', component: BadgesPage },
-	  { title: 'Botões', component: BotoesPage },
-	  { title: 'Card', component: CardPage },
-	  { title: 'Checkbox', component: CheckboxPage },
-	  { title: 'Radio', component: RadioPage },
-	  { title: 'Range', component: RangePage },
-	  { title: 'DateTime', component: DateTimePage },
-	  { title: 'Fab', component: FabPage },
-	  { title: 'Grid', component: GridPage },
-	  { title: 'Icones', component: IconesPage },
-	  { title: 'Input', component: InputPage },
-	  { title: 'List', component: ListPage },
-	  { title: 'Toggle', component: TogglePage },
-	  { title: 'Loading', component: LoadingPage },
-	  { title: 'Toast', component: ToastPage },
-	  { title: 'Toolbar', component: ToolbarPage }
-    ];
+		// used for an example of ngFor and navigation
+		this.pages = [
+			{ title: 'Home', component: HomePage },
+			{ title: 'ActionSheet', component: ActionSheetPage },
+			{ title: 'Alert', component: AlertPage },
+			{ title: 'Badges', component: BadgesPage },
+			{ title: 'Botões', component: BotoesPage },
+			{ title: 'Card', component: CardPage },
+			{ title: 'Checkbox', component: CheckboxPage },
+			{ title: 'Radio', component: RadioPage },
+			{ title: 'Range', component: RangePage },
+			{ title: 'DateTime', component: DateTimePage },
+			{ title: 'Fab', component: FabPage },
+			{ title: 'Grid', component: GridPage },
+			{ title: 'Icones', component: IconesPage },
+			{ title: 'Input', component: InputPage },
+			{ title: 'List', component: ListPage },
+			{ title: 'Toggle', component: TogglePage },
+			{ title: 'Loading', component: LoadingPage },
+			{ title: 'Toast', component: ToastPage },
+			{ title: 'Toolbar', component: ToolbarPage },
+			{ title: 'Segment', component: SegmentPage },
+			{ title: 'Tabs', component: TabsPage },
+			{ title: 'Select', component: SelectPage }
+		];
 
-  }
+	}
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
-  }
+	initializeApp() {
+		this.platform.ready().then(() => {
+			// Okay, so the platform is ready and our plugins are available.
+			// Here you can do any higher level native things you might need.
+			this.statusBar.styleDefault();
+			this.splashScreen.hide();
+		});
+	}
 
-  openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
-  }
+	openPage(page) {
+		// Reset the content nav to have just this page
+		// we wouldn't want the back button to show in this scenario
+		this.nav.setRoot(page.component);
+	}
 }
