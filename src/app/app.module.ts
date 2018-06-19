@@ -28,6 +28,9 @@ import { ToolbarPage } from '../pages/toolbar/toolbar';
 import { SegmentPage } from '../pages/segment/segment';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SelectPage } from '../pages/select/select';
+import { PaginaPrincipalPage } from '../pages/pagina-principal/pagina-principal';
+import { Pagina1Page } from '../pages/pagina1/pagina1';
+import { Pagina2Page } from '../pages/pagina2/pagina2';
 
 @NgModule({
   declarations: [
@@ -53,7 +56,10 @@ import { SelectPage } from '../pages/select/select';
 		ToolbarPage,
 		SegmentPage,
 		TabsPage,
-		SelectPage
+		SelectPage,
+		PaginaPrincipalPage,
+		Pagina1Page,
+		Pagina2Page
   ],
   imports: [
     BrowserModule,
@@ -83,7 +89,10 @@ import { SelectPage } from '../pages/select/select';
 		ToolbarPage,
 		SegmentPage,
 		TabsPage,
-		SelectPage
+		SelectPage,
+		PaginaPrincipalPage,
+		Pagina1Page,
+		Pagina2Page
   ],
   providers: [
     StatusBar,
