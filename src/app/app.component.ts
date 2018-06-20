@@ -32,6 +32,7 @@ import { TypographyPage } from '../pages/typography/typography';
 import { ChipsPage } from '../pages/chips/chips';
 import { PopoverPage } from '../pages/popover/popover';
 import { EstilizacaoPage } from '../pages/estilizacao/estilizacao';
+import { CameraPage } from '../pages/camera/camera';
 
 @Component({
 	templateUrl: 'app.html'
@@ -39,7 +40,7 @@ import { EstilizacaoPage } from '../pages/estilizacao/estilizacao';
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 
-	rootPage: any = EstilizacaoPage;
+	rootPage: any = CameraPage;
 
 	pages: Array<{title: string, component: any}>;
 
@@ -76,7 +77,8 @@ export class MyApp {
 			{ title: 'Typography', component: TypographyPage },
 			{ title: 'Chips', component: ChipsPage },
 			{ title: 'Popover', component: PopoverPage },
-			{ title: 'Estilização', component: EstilizacaoPage }
+			{ title: 'Estilização', component: EstilizacaoPage },
+			{ title: 'Camera', component: CameraPage }
 		];
 
 	}

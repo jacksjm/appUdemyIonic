@@ -1,3 +1,4 @@
+import { Camera } from '@ionic-native/camera';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -38,6 +39,7 @@ import { TypographyPage } from '../pages/typography/typography';
 import { ChipsPage } from '../pages/chips/chips';
 import { PopoverPage } from '../pages/popover/popover';
 import { EstilizacaoPage } from '../pages/estilizacao/estilizacao';
+import { CameraPage } from '../pages/camera/camera';
 
 @NgModule({
   declarations: [
@@ -73,7 +75,8 @@ import { EstilizacaoPage } from '../pages/estilizacao/estilizacao';
 		TypographyPage,
 		ChipsPage,
 		PopoverPage,
-		EstilizacaoPage
+		EstilizacaoPage,
+		CameraPage
   ],
   imports: [
     BrowserModule,
@@ -113,11 +116,13 @@ import { EstilizacaoPage } from '../pages/estilizacao/estilizacao';
 		TypographyPage,
 		ChipsPage,
 		PopoverPage,
-		EstilizacaoPage
+		EstilizacaoPage,
+		CameraPage
   ],
   providers: [
     StatusBar,
-    SplashScreen,
+	SplashScreen,
+	Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
