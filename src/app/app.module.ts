@@ -34,6 +34,7 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
 import { ModalPrincipalPage } from '../pages/modal-principal/modal-principal';
 import { ModalConteudoPage } from '../pages/modal-conteudo/modal-conteudo';
 import { SlidesPage } from '../pages/slides/slides';
+import { TypographyPage } from '../pages/typography/typography';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { SlidesPage } from '../pages/slides/slides';
 		Pagina2Page,
 		ModalPrincipalPage,
 		ModalConteudoPage,
-		SlidesPage
+		SlidesPage,
+		TypographyPage
   ],
   imports: [
     BrowserModule,
@@ -101,7 +103,8 @@ import { SlidesPage } from '../pages/slides/slides';
 		Pagina2Page,
 		ModalPrincipalPage,
 		ModalConteudoPage,
-		SlidesPage
+		SlidesPage,
+		TypographyPage
   ],
   providers: [
     StatusBar,

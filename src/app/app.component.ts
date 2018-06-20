@@ -28,6 +28,7 @@ import { SelectPage } from '../pages/select/select';
 import { PaginaPrincipalPage } from '../pages/pagina-principal/pagina-principal';
 import { ModalPrincipalPage } from '../pages/modal-principal/modal-principal';
 import { SlidesPage } from '../pages/slides/slides';
+import { TypographyPage } from '../pages/typography/typography';
 
 @Component({
 	templateUrl: 'app.html'
@@ -35,7 +36,7 @@ import { SlidesPage } from '../pages/slides/slides';
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 
-	rootPage: any = SlidesPage;
+	rootPage: any = TypographyPage;
 
 	pages: Array<{title: string, component: any}>;
 
@@ -68,7 +69,8 @@ export class MyApp {
 			{ title: 'Select', component: SelectPage },
 			{ title: 'Pagina Principal', component: PaginaPrincipalPage },
 			{ title: 'Modal Principal', component: ModalPrincipalPage },
-			{ title: 'Slides', component: SlidesPage }
+			{ title: 'Slides', component: SlidesPage },
+			{ title: 'Typography', component: TypographyPage }
 		];
 
 	}
