@@ -37,6 +37,7 @@ import { SlidesPage } from '../pages/slides/slides';
 import { TypographyPage } from '../pages/typography/typography';
 import { ChipsPage } from '../pages/chips/chips';
 import { PopoverPage } from '../pages/popover/popover';
+import { EstilizacaoPage } from '../pages/estilizacao/estilizacao';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { PopoverPage } from '../pages/popover/popover';
 		SlidesPage,
 		TypographyPage,
 		ChipsPage,
-		PopoverPage
+		PopoverPage,
+		EstilizacaoPage
   ],
   imports: [
     BrowserModule,
@@ -110,7 +112,8 @@ import { PopoverPage } from '../pages/popover/popover';
 		SlidesPage,
 		TypographyPage,
 		ChipsPage,
-		PopoverPage
+		PopoverPage,
+		EstilizacaoPage
   ],
   providers: [
     StatusBar,
