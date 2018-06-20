@@ -1,0 +1,24 @@
+<ion-header>
+
+	<!--<ion-navbar>
+		<ion-title>ModalConteudo</ion-title>
+	</ion-navbar>-->
+	<ion-toolbar>
+		<ion-title>Modal Conteudo</ion-title>
+		<ion-buttons end>
+			<button ion-button icon-only (click)="fecharModal()">
+				<ion-icon name="close"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list *ngIf="usuario">
+		<ion-item>{{usuario.nome}}</ion-item>
+		<ion-item>{{usuario.idade}}</ion-item>
+	</ion-list>
+	<button ion-button block (click)="fecharModalParam()">Fechar</button>
+</ion-content>

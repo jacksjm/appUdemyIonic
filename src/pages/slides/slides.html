@@ -1,0 +1,18 @@
+<ion-header>
+
+	<ion-navbar>
+		<button ion-button menuToggle>
+		<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Slides</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-slides (ionSlideDidChange)="slideAlterado()" loop="true" style="background-color: black">
+		<ion-slide *ngFor="let slide of slides"><img [src]="slide"/></ion-slide>
+	</ion-slides>
+	<button ion-button block (click)="avancarSlide()">Avançar</button>
+</ion-content>

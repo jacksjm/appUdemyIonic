@@ -1,3 +1,6 @@
+import { Camera } from '@ionic-native/camera';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { Geolocation } from '@ionic-native/geolocation';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -31,6 +34,16 @@ import { SelectPage } from '../pages/select/select';
 import { PaginaPrincipalPage } from '../pages/pagina-principal/pagina-principal';
 import { Pagina1Page } from '../pages/pagina1/pagina1';
 import { Pagina2Page } from '../pages/pagina2/pagina2';
+import { ModalPrincipalPage } from '../pages/modal-principal/modal-principal';
+import { ModalConteudoPage } from '../pages/modal-conteudo/modal-conteudo';
+import { SlidesPage } from '../pages/slides/slides';
+import { TypographyPage } from '../pages/typography/typography';
+import { ChipsPage } from '../pages/chips/chips';
+import { PopoverPage } from '../pages/popover/popover';
+import { EstilizacaoPage } from '../pages/estilizacao/estilizacao';
+import { CameraPage } from '../pages/camera/camera';
+import { BarCodePage } from '../pages/bar-code/bar-code';
+import { LocalizacaoPage } from '../pages/localizacao/localizacao';
 
 @NgModule({
   declarations: [
@@ -59,7 +72,17 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
 		SelectPage,
 		PaginaPrincipalPage,
 		Pagina1Page,
-		Pagina2Page
+		Pagina2Page,
+		ModalPrincipalPage,
+		ModalConteudoPage,
+		SlidesPage,
+		TypographyPage,
+		ChipsPage,
+		PopoverPage,
+		EstilizacaoPage,
+		CameraPage,
+		BarCodePage,
+		LocalizacaoPage
   ],
   imports: [
     BrowserModule,
@@ -92,11 +115,24 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
 		SelectPage,
 		PaginaPrincipalPage,
 		Pagina1Page,
-		Pagina2Page
+		Pagina2Page,
+		ModalPrincipalPage,
+		ModalConteudoPage,
+		SlidesPage,
+		TypographyPage,
+		ChipsPage,
+		PopoverPage,
+		EstilizacaoPage,
+		CameraPage,
+		BarCodePage,
+		LocalizacaoPage
   ],
   providers: [
     StatusBar,
-    SplashScreen,
+	SplashScreen,
+	Camera,
+	BarcodeScanner,
+	Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
