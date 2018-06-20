@@ -33,6 +33,7 @@ import { ChipsPage } from '../pages/chips/chips';
 import { PopoverPage } from '../pages/popover/popover';
 import { EstilizacaoPage } from '../pages/estilizacao/estilizacao';
 import { CameraPage } from '../pages/camera/camera';
+import { BarCodePage } from '../pages/bar-code/bar-code';
 
 @Component({
 	templateUrl: 'app.html'
@@ -40,7 +41,7 @@ import { CameraPage } from '../pages/camera/camera';
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 
-	rootPage: any = CameraPage;
+	rootPage: any = BarCodePage;
 
 	pages: Array<{title: string, component: any}>;
 
@@ -78,7 +79,8 @@ export class MyApp {
 			{ title: 'Chips', component: ChipsPage },
 			{ title: 'Popover', component: PopoverPage },
 			{ title: 'Estilização', component: EstilizacaoPage },
-			{ title: 'Camera', component: CameraPage }
+			{ title: 'Camera', component: CameraPage },
+			{ title: 'BarCode', component: BarCodePage }
 		];
 
 	}

@@ -1,4 +1,5 @@
 import { Camera } from '@ionic-native/camera';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -40,6 +41,7 @@ import { ChipsPage } from '../pages/chips/chips';
 import { PopoverPage } from '../pages/popover/popover';
 import { EstilizacaoPage } from '../pages/estilizacao/estilizacao';
 import { CameraPage } from '../pages/camera/camera';
+import { BarCodePage } from '../pages/bar-code/bar-code';
 
 @NgModule({
   declarations: [
@@ -76,7 +78,8 @@ import { CameraPage } from '../pages/camera/camera';
 		ChipsPage,
 		PopoverPage,
 		EstilizacaoPage,
-		CameraPage
+		CameraPage,
+		BarCodePage
   ],
   imports: [
     BrowserModule,
@@ -117,12 +120,14 @@ import { CameraPage } from '../pages/camera/camera';
 		ChipsPage,
 		PopoverPage,
 		EstilizacaoPage,
-		CameraPage
+		CameraPage,
+		BarCodePage
   ],
   providers: [
     StatusBar,
 	SplashScreen,
 	Camera,
+	BarcodeScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
