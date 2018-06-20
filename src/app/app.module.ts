@@ -35,6 +35,7 @@ import { ModalPrincipalPage } from '../pages/modal-principal/modal-principal';
 import { ModalConteudoPage } from '../pages/modal-conteudo/modal-conteudo';
 import { SlidesPage } from '../pages/slides/slides';
 import { TypographyPage } from '../pages/typography/typography';
+import { ChipsPage } from '../pages/chips/chips';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { TypographyPage } from '../pages/typography/typography';
 		ModalPrincipalPage,
 		ModalConteudoPage,
 		SlidesPage,
-		TypographyPage
+		TypographyPage,
+		ChipsPage
   ],
   imports: [
     BrowserModule,
@@ -104,7 +106,8 @@ import { TypographyPage } from '../pages/typography/typography';
 		ModalPrincipalPage,
 		ModalConteudoPage,
 		SlidesPage,
-		TypographyPage
+		TypographyPage,
+		ChipsPage
   ],
   providers: [
     StatusBar,
