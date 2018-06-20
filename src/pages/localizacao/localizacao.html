@@ -4,12 +4,15 @@
     <button ion-button menuToggle>
     <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>BarCode</ion-title>
+    <ion-title>Localizacao</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <button ion-button block (click)="scanCode()">Escanerar Barra</button>
+  <ion-list>
+    <ion-item>Latitute: {{latitute}}</ion-item>
+    <ion-item>Longitute: {{longitute}}</ion-item>
+  </ion-list>
 </ion-content>

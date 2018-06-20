@@ -34,6 +34,7 @@ import { PopoverPage } from '../pages/popover/popover';
 import { EstilizacaoPage } from '../pages/estilizacao/estilizacao';
 import { CameraPage } from '../pages/camera/camera';
 import { BarCodePage } from '../pages/bar-code/bar-code';
+import { LocalizacaoPage } from '../pages/localizacao/localizacao';
 
 @Component({
 	templateUrl: 'app.html'
@@ -41,7 +42,7 @@ import { BarCodePage } from '../pages/bar-code/bar-code';
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 
-	rootPage: any = BarCodePage;
+	rootPage: any = LocalizacaoPage;
 
 	pages: Array<{title: string, component: any}>;
 
@@ -80,7 +81,8 @@ export class MyApp {
 			{ title: 'Popover', component: PopoverPage },
 			{ title: 'Estilização', component: EstilizacaoPage },
 			{ title: 'Camera', component: CameraPage },
-			{ title: 'BarCode', component: BarCodePage }
+			{ title: 'BarCode', component: BarCodePage },
+			{ title: 'Localização', component: LocalizacaoPage }
 		];
 
 	}
