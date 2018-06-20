@@ -1,0 +1,29 @@
+<ion-header>
+
+	<ion-navbar>
+		<button ion-button menuToggle>
+		<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>ModalPrincipal</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list>
+		<ion-item>
+			<button ion-button block (click)="abrirModalBasico()">Modal Simples</button>
+		</ion-item>
+	</ion-list>
+	<ion-list>
+		<ion-item>
+			<button ion-button block (click)="abrirModalParam()">Modal Com Parametros</button>
+		</ion-item>
+	</ion-list>
+	<ion-list>
+		<ion-item>
+			<button ion-button block (click)="abrirModalFechar()">Modal Com Fechar</button>
+		</ion-item>
+	</ion-list>
+</ion-content>

@@ -31,6 +31,8 @@ import { SelectPage } from '../pages/select/select';
 import { PaginaPrincipalPage } from '../pages/pagina-principal/pagina-principal';
 import { Pagina1Page } from '../pages/pagina1/pagina1';
 import { Pagina2Page } from '../pages/pagina2/pagina2';
+import { ModalPrincipalPage } from '../pages/modal-principal/modal-principal';
+import { ModalConteudoPage } from '../pages/modal-conteudo/modal-conteudo';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,9 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
 		SelectPage,
 		PaginaPrincipalPage,
 		Pagina1Page,
-		Pagina2Page
+		Pagina2Page,
+		ModalPrincipalPage,
+		ModalConteudoPage
   ],
   imports: [
     BrowserModule,
@@ -92,7 +96,9 @@ import { Pagina2Page } from '../pages/pagina2/pagina2';
 		SelectPage,
 		PaginaPrincipalPage,
 		Pagina1Page,
-		Pagina2Page
+		Pagina2Page,
+		ModalPrincipalPage,
+		ModalConteudoPage
   ],
   providers: [
     StatusBar,
