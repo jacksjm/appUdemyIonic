@@ -30,6 +30,7 @@ import { ModalPrincipalPage } from '../pages/modal-principal/modal-principal';
 import { SlidesPage } from '../pages/slides/slides';
 import { TypographyPage } from '../pages/typography/typography';
 import { ChipsPage } from '../pages/chips/chips';
+import { PopoverPage } from '../pages/popover/popover';
 
 @Component({
 	templateUrl: 'app.html'
@@ -37,7 +38,7 @@ import { ChipsPage } from '../pages/chips/chips';
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 
-	rootPage: any = ChipsPage;
+	rootPage: any = PopoverPage;
 
 	pages: Array<{title: string, component: any}>;
 
@@ -72,7 +73,8 @@ export class MyApp {
 			{ title: 'Modal Principal', component: ModalPrincipalPage },
 			{ title: 'Slides', component: SlidesPage },
 			{ title: 'Typography', component: TypographyPage },
-			{ title: 'Chips', component: ChipsPage }
+			{ title: 'Chips', component: ChipsPage },
+			{ title: 'Popover', component: PopoverPage }
 		];
 
 	}

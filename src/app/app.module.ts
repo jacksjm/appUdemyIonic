@@ -36,6 +36,7 @@ import { ModalConteudoPage } from '../pages/modal-conteudo/modal-conteudo';
 import { SlidesPage } from '../pages/slides/slides';
 import { TypographyPage } from '../pages/typography/typography';
 import { ChipsPage } from '../pages/chips/chips';
+import { PopoverPage } from '../pages/popover/popover';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { ChipsPage } from '../pages/chips/chips';
 		ModalConteudoPage,
 		SlidesPage,
 		TypographyPage,
-		ChipsPage
+		ChipsPage,
+		PopoverPage
   ],
   imports: [
     BrowserModule,
@@ -107,7 +109,8 @@ import { ChipsPage } from '../pages/chips/chips';
 		ModalConteudoPage,
 		SlidesPage,
 		TypographyPage,
-		ChipsPage
+		ChipsPage,
+		PopoverPage
   ],
   providers: [
     StatusBar,
