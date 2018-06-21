@@ -45,7 +45,7 @@ import { AnimacaoPage } from '../pages/animacao/animacao';
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 
-	rootPage: any = AnimacaoPage;
+	rootPage: any = HomePage;
 
 	pages: Array<{title: string, component: any}>;
 
@@ -119,7 +119,7 @@ export class MyApp {
 		//this.nav.push(page.component)
 	}
 
-	lazyLoadPage() {
-		this.nav.push('LazyLoadPage')
+	opeLazyPage(namePage: string) {
+		this.nav.push(namePage)
 	}
 }

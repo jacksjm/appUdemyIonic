@@ -27,7 +27,7 @@ export class CepPage {
   public consultarCep(): void {
     let loader = this.loadingCtrl.create({content: 'Aguarde...'})
     loader.present()
-    this.cepService.listarEndereco(this.form.get('cep').value).then( (response) => {
+    this.cepService.listarEndereco(this.form.value.cep).then( (response) => {
       this.cep = response.json()
       loader.dismiss()
     }).catch((error) => {
