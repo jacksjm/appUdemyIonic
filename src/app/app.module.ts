@@ -49,6 +49,7 @@ import { LocalizacaoPage } from '../pages/localizacao/localizacao';
 import { CepPage } from '../pages/cep/cep';
 import { CepProvider } from '../providers/cep/cep';
 import { StoragePage } from '../pages/storage/storage';
+import { AnimacaoPage } from '../pages/animacao/animacao';
 
 @NgModule({
   declarations: [
@@ -89,7 +90,8 @@ import { StoragePage } from '../pages/storage/storage';
 		BarCodePage,
 		LocalizacaoPage,
 		CepPage,
-		StoragePage
+		StoragePage,
+		AnimacaoPage
   ],
   imports: [
     BrowserModule,
@@ -136,7 +138,8 @@ import { StoragePage } from '../pages/storage/storage';
 		BarCodePage,
 		LocalizacaoPage,
 		CepPage,
-		StoragePage
+		StoragePage,
+		AnimacaoPage
   ],
   providers: [
     StatusBar,

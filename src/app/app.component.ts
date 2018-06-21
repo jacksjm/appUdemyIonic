@@ -37,6 +37,7 @@ import { BarCodePage } from '../pages/bar-code/bar-code';
 import { LocalizacaoPage } from '../pages/localizacao/localizacao';
 import { CepPage } from '../pages/cep/cep';
 import { StoragePage } from '../pages/storage/storage';
+import { AnimacaoPage } from '../pages/animacao/animacao';
 
 @Component({
 	templateUrl: 'app.html'
@@ -44,7 +45,7 @@ import { StoragePage } from '../pages/storage/storage';
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 
-	rootPage: any = StoragePage;
+	rootPage: any = AnimacaoPage;
 
 	pages: Array<{title: string, component: any}>;
 
@@ -86,7 +87,8 @@ export class MyApp {
 			{ title: 'BarCode', component: BarCodePage },
 			{ title: 'Localização', component: LocalizacaoPage },
 			{ title: 'CEP', component: CepPage },
-			{ title: 'Storage', component: StoragePage }
+			{ title: 'Storage', component: StoragePage },
+			{ title: 'Animação', component: AnimacaoPage }
 		];
 
 	}
@@ -103,7 +105,7 @@ export class MyApp {
 	openPage(page) {
 		// Reset the content nav to have just this page
 		// we wouldn't want the back button to show in this scenario
-		//this.nav.setRoot(page.component);
-		this.nav.push(page.component)
+		this.nav.setRoot(page.component);
+		//this.nav.push(page.component)
 	}
 }
