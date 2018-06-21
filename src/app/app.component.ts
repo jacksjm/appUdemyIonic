@@ -118,4 +118,8 @@ export class MyApp {
 		this.nav.setRoot(page.component);
 		//this.nav.push(page.component)
 	}
+
+	lazyLoadPage() {
+		this.nav.push('LazyLoadPage')
+	}
 }
