@@ -4,6 +4,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { HttpModule } from '@angular/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -44,6 +45,8 @@ import { EstilizacaoPage } from '../pages/estilizacao/estilizacao';
 import { CameraPage } from '../pages/camera/camera';
 import { BarCodePage } from '../pages/bar-code/bar-code';
 import { LocalizacaoPage } from '../pages/localizacao/localizacao';
+import { CepPage } from '../pages/cep/cep';
+import { CepProvider } from '../providers/cep/cep';
 
 @NgModule({
   declarations: [
@@ -82,11 +85,13 @@ import { LocalizacaoPage } from '../pages/localizacao/localizacao';
 		EstilizacaoPage,
 		CameraPage,
 		BarCodePage,
-		LocalizacaoPage
+		LocalizacaoPage,
+		CepPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+	IonicModule.forRoot(MyApp),
+	HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -125,7 +130,8 @@ import { LocalizacaoPage } from '../pages/localizacao/localizacao';
 		EstilizacaoPage,
 		CameraPage,
 		BarCodePage,
-		LocalizacaoPage
+		LocalizacaoPage,
+		CepPage
   ],
   providers: [
     StatusBar,
@@ -133,7 +139,8 @@ import { LocalizacaoPage } from '../pages/localizacao/localizacao';
 	Camera,
 	BarcodeScanner,
 	Geolocation,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    CepProvider
   ]
 })
 export class AppModule {}

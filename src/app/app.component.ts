@@ -35,6 +35,7 @@ import { EstilizacaoPage } from '../pages/estilizacao/estilizacao';
 import { CameraPage } from '../pages/camera/camera';
 import { BarCodePage } from '../pages/bar-code/bar-code';
 import { LocalizacaoPage } from '../pages/localizacao/localizacao';
+import { CepPage } from '../pages/cep/cep';
 
 @Component({
 	templateUrl: 'app.html'
@@ -42,7 +43,7 @@ import { LocalizacaoPage } from '../pages/localizacao/localizacao';
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 
-	rootPage: any = LocalizacaoPage;
+	rootPage: any = CepPage;
 
 	pages: Array<{title: string, component: any}>;
 
@@ -82,7 +83,8 @@ export class MyApp {
 			{ title: 'Estilização', component: EstilizacaoPage },
 			{ title: 'Camera', component: CameraPage },
 			{ title: 'BarCode', component: BarCodePage },
-			{ title: 'Localização', component: LocalizacaoPage }
+			{ title: 'Localização', component: LocalizacaoPage },
+			{ title: 'CEP', component: CepPage }
 		];
 
 	}
