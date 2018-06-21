@@ -99,6 +99,16 @@ export class MyApp {
 			// Here you can do any higher level native things you might need.
 			this.statusBar.styleDefault();
 			this.splashScreen.hide();
+
+			//Implementação do OneSignal
+			let functionReturn = (data) => {
+				console.log('Notificação ' + JSON.stringify(data))
+			}
+			if ( window['plugins'].OneSignal ){
+				window['plugins'].OneSignal.startInit("cc9d4441-7371-47f8-9ed9-a2747f45325b","403395720815")
+					.handleNotificationOpened(functionReturn)
+					.endInit()
+			}
 		});
 	}
 
