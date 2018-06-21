@@ -36,6 +36,7 @@ import { CameraPage } from '../pages/camera/camera';
 import { BarCodePage } from '../pages/bar-code/bar-code';
 import { LocalizacaoPage } from '../pages/localizacao/localizacao';
 import { CepPage } from '../pages/cep/cep';
+import { StoragePage } from '../pages/storage/storage';
 
 @Component({
 	templateUrl: 'app.html'
@@ -43,7 +44,7 @@ import { CepPage } from '../pages/cep/cep';
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 
-	rootPage: any = CepPage;
+	rootPage: any = StoragePage;
 
 	pages: Array<{title: string, component: any}>;
 
@@ -84,7 +85,8 @@ export class MyApp {
 			{ title: 'Camera', component: CameraPage },
 			{ title: 'BarCode', component: BarCodePage },
 			{ title: 'Localização', component: LocalizacaoPage },
-			{ title: 'CEP', component: CepPage }
+			{ title: 'CEP', component: CepPage },
+			{ title: 'Storage', component: StoragePage }
 		];
 
 	}

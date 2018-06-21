@@ -1,6 +1,7 @@
 import { Camera } from '@ionic-native/camera';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Geolocation } from '@ionic-native/geolocation';
+import { IonicStorageModule } from '@ionic/storage';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -47,6 +48,7 @@ import { BarCodePage } from '../pages/bar-code/bar-code';
 import { LocalizacaoPage } from '../pages/localizacao/localizacao';
 import { CepPage } from '../pages/cep/cep';
 import { CepProvider } from '../providers/cep/cep';
+import { StoragePage } from '../pages/storage/storage';
 
 @NgModule({
   declarations: [
@@ -86,12 +88,14 @@ import { CepProvider } from '../providers/cep/cep';
 		CameraPage,
 		BarCodePage,
 		LocalizacaoPage,
-		CepPage
+		CepPage,
+		StoragePage
   ],
   imports: [
     BrowserModule,
 	IonicModule.forRoot(MyApp),
-	HttpModule
+	HttpModule,
+	IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -131,7 +135,8 @@ import { CepProvider } from '../providers/cep/cep';
 		CameraPage,
 		BarCodePage,
 		LocalizacaoPage,
-		CepPage
+		CepPage,
+		StoragePage
   ],
   providers: [
     StatusBar,
