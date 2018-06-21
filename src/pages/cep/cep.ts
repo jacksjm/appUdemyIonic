@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController, LoadingController } from 'ionic-angular';
+import { NavController, NavParams, ToastController, LoadingController } from 'ionic-angular';
 import { CepProvider } from '../../providers/cep/cep';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 
-@IonicPage()
 @Component({
   selector: 'page-cep',
   templateUrl: 'cep.html',

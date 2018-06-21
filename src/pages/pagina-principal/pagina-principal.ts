@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { Pagina1Page } from '../pagina1/pagina1';
 import { Pagina2Page } from '../pagina2/pagina2';
 
-@IonicPage()
 @Component({
   selector: 'page-pagina-principal',
   templateUrl: 'pagina-principal.html',

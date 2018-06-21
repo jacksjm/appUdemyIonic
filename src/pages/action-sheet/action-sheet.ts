@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ActionSheetController, AlertController } from 'ionic-angular';
+import { NavController, NavParams, ActionSheetController, AlertController } from 'ionic-angular';
 
-@IonicPage()
 @Component({
   selector: 'page-action-sheet',
   templateUrl: 'action-sheet.html',

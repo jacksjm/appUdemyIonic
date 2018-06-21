@@ -1,7 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController, Slides } from 'ionic-angular';
+import { NavController, NavParams, ToastController, Slides } from 'ionic-angular';
 
-@IonicPage()
 @Component({
 	selector: 'page-slides',
 	templateUrl: 'slides.html',

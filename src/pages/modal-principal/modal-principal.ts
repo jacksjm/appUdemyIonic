@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ModalController, ToastController } from 'ionic-angular';
+import { NavController, NavParams, ModalController, ToastController } from 'ionic-angular';
 import { FabPage } from '../fab/fab';
 import { ModalConteudoPage } from '../modal-conteudo/modal-conteudo';
 
-@IonicPage()
 @Component({
   selector: 'page-modal-principal',
   templateUrl: 'modal-principal.html',

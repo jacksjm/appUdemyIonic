@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { NavController, NavParams, ToastController } from 'ionic-angular';
 
-@IonicPage()
 @Component({
   selector: 'page-toast',
   templateUrl: 'toast.html',
