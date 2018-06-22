@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { NavController, NavParams, ToastController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 
-@IonicPage()
 @Component({
   selector: 'page-localizacao',
   templateUrl: 'localizacao.html',
